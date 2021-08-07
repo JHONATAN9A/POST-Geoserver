@@ -1,5 +1,7 @@
 # POST-Geoserver
 
+Metodo para hacer consultas de tipo filtro a geoserver, en este caso un intersects, a partir de la geometria que se le pase.
+
 ###### Request type Point 
 ```
 Point = `<wfs:GetFeature service="WFS" version="1.0.0"
@@ -7,7 +9,7 @@ Point = `<wfs:GetFeature service="WFS" version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/wfs"
     xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs"
     xmlns:ogc="http://www.opengis.net/ogc">
-    <wfs:Query typeName="yopal:gc_predios_catastro">
+    <wfs:Query typeName="Colombia:municipios">
         <ogc:Filter>
             <ogc:Intersects>
                 <ogc:PropertyName>geom</ogc:PropertyName>
@@ -26,7 +28,7 @@ Polygon = `<wfs:GetFeature service="WFS" version="1.0.0"
     xsi:schemaLocation="http://www.opengis.net/wfs"
     xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs"
     xmlns:ogc="http://www.opengis.net/ogc">
-    <wfs:Query typeName="yopal:gc_predios_catastro">
+    <wfs:Query typeName="Colombia:municipios">
         <ogc:Filter>
             <ogc:Intersects>
                 <ogc:PropertyName>geom</ogc:PropertyName>
