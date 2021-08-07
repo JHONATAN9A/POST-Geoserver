@@ -1,6 +1,6 @@
 # POST-Geoserver
 
-Metodo para hacer consultas de tipo filtro a geoserver, en este caso un intersects, a partir de la geometria que se le pase.
+Metodo para hacer consultas de tipo filtro a geoserver, en este caso un **intersects***, a partir de la geometria que se le pase.
 
 ###### Request type Point 
 ```
